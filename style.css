@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500,600&display=swap');
 
 *{
     margin: 0;
@@ -13,7 +13,8 @@ html{
     background-image: url('https://images.unsplash.com/photo-1621948902786-8572b7911e19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
+    padding: 3.5rem 0;
 }
 
 .center{
@@ -23,12 +24,17 @@ html{
     align-items: center;
 }
 
+.border{
+    border-radius: 0.3rem;
+    border: none;
+}
+
 header{
     text-transform: capitalize;
     color: #fff;
     opacity: 0.8;
     text-align: center;
-    margin-top: 3.5rem;
+    /* margin-top: 3.5rem; */
     /* border: 1px solid red; */
 }
 
@@ -52,8 +58,86 @@ header p{
     background-color: rgb(42,42,72);
     /* border:1px solid red; */
     opacity: 0.9;
-    width: 500px;
+    width: 50%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
+    padding: 2em;
+    color: #f1f1f1;
+    color: #f1f1f1;
+}
+
+#survey-form,
+#survey-form input,
+#survey-form select
+{
+    border: none;
+    border-radius: 0.3rem;
+}
+
+#survey-form label, p.label{
+    text-transform: capitalize;
+    letter-spacing: 0.04rem;
+    font-size: 1.3rem;
+}
+
+#survey-form p.label{
+    margin-bottom:  0em;
+    font-size: 1.4rem;
+    font-weight: 600;
+    /* color:red; */
+    /* text-transform: uppercase; */
+}
+
+#survey-form input,
+#survey-form select
+{
+    margin: 1em 0 2em;
     padding: 1em;
+    /* border: none;
+    border-radius: 0.3rem; */
+    font-size: 1rem;
+}
+
+#survey-form .checkboxes,
+#survey-form .radio-buttons
+{
+    margin-top: 3em;
+    font-size: 1rem;
+    /* border: 1px solid red; */
+}
+
+#survey-form select{
+    /* border: 19px solid red; */
+    margin-bottom: 0;
+}
+
+#survey-form .checkboxes label,
+#survey-form .checkboxes input,
+#survey-form .radio-buttons label,
+#survey-form .radio-buttons input
+{
+    margin: 1em 0 0;
+    /* color:red;
+    /*border: 1px solid red; */
+}
+
+textarea{
+    margin-top: 3em;
+    padding: 0.3em 0.5em;
+    height: 150px;
+    resize: none;
+    font-size: 1.5rem;
+    /* border-radius: 0.3rem;
+    border: none; */
+}
+
+button{
+    margin-top: 1.3em;
+    border-radius: 0;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    background-color: rgb(55,175,101);
+    color: #f1f1f1;
 }
