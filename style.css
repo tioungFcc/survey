@@ -127,7 +127,7 @@ textarea{
     padding: 0.3em 0.5em;
     height: 150px;
     resize: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* border-radius: 0.3rem;
     border: none; */
 }
@@ -140,4 +140,10 @@ button{
     font-size: 1.2rem;
     background-color: rgb(55,175,101);
     color: #f1f1f1;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.9
 }
